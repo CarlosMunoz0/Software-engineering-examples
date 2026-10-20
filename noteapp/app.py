@@ -7,7 +7,7 @@ from flask import Flask, redirect, request, url_for
 
 PAGE_TITLE = "Notas en revisión"
 # Si es True, /health responde 500 aunque la base de datos esté bien.
-FORCE_UNHEALTHY = False
+FORCE_UNHEALTHY = True
 
 DATABASE_URL = os.environ["DATABASE_URL"]
 READY_AFTER_SECONDS = int(os.environ.get("READY_AFTER_SECONDS", "0"))
