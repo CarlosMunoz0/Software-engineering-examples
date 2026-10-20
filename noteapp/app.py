@@ -5,7 +5,7 @@ import time
 import psycopg
 from flask import Flask, redirect, request, url_for
 
-PAGE_TITLE = "NoteApp"
+PAGE_TITLE = "Notas en revisión"
 # Si es True, /health responde 500 aunque la base de datos esté bien.
 FORCE_UNHEALTHY = False
 
