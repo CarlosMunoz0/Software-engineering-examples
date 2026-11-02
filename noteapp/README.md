@@ -32,3 +32,13 @@ Luego entra a [http://localhost:3000](http://localhost:3000).
 | `READY_AFTER_SECONDS` | Segundos tras el arranque en los que `/health` responde 500. `0` la deja lista en cuanto la base responde. |
 
 La tabla `notes` se crea sola la primera vez que la app lee o guarda una nota.
+
+## Prueba
+
+`test_nota.py` comprueba que el formulario incluye «Escribe algo para guardar». No se conecta a PostgreSQL.
+
+```bash
+pip install -r requirements.txt
+pytest
+```
+
